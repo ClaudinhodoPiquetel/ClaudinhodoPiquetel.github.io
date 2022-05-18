@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* CSS document */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    word-wrap: break-word;
+    word-break: break-all;
+    box-sizing: content-box;
+}
+
+header{
+    width: 100%;
+    min-height: 600px;
+    height: 659px;
+    margin: 0px auto;
+    background-color: black;
+}
+
+.conteiner{
+    margin: 0px auto;
+    padding-bottom: 28%;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    box-shadow: 0px 0px 10px 0px #777;
+}
+.photoWrapper{
+    position: absolute;
+    animation: round 16s infinite;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+.photo{
+    height: auto;
+    width: 100%;
+}
+
+.etiqueta{
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background-color: rgba(255, 0, 79, 0.62);
+    height: 200px;
+    width: 200px;
+    z-index: 1000;
+}
+.etiqueta img{
+    max-width: 100%;
+}
+.etiqueta p{
+    margin: 30px;
+}
+
+p.photoDescr {
+    position: absolute;
+    top: 250px;
+    right: -50px;
+    background-color: rgba(255, 0, 79, 0.62);
+    margin: 10px;
+    width: 70%;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 22px;
+    text-shadow: 1px 1px 6px #000;
+    }
+    
+@keyframes round{
+    25%{
+            opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+}
+
+.photoWrapper:nth-child(1){
+    animation-delay: 0s;
+}
+.photoWrapper:nth-child(2){
+    animation-delay: 4s;
+}
+.photoWrapper:nth-child(3){
+    animation-delay: 8s;
+}
+.photoWrapper:nth-child(4){
+    animation-delay: 12s;
+}
+.photoWrapper:nth-child(5){
+    animation-delay: 16s;
+}
+.photoWrapper:nth-child(6){
+    animation-delay: 20s;
+}
+
+nav{
+    margin-top: 40px;
+    height: 300px;
+    width: auto;
+    background-color: rgb(255, 1, 1);
+}
+
+main{
+    height: 300px;
+    width: auto;
+    background-color: rgb(170, 52, 72)
+}
+
+footer{
+    height: 300px;
+    width: auto;
+    background-color:blue
+}
+.galeria-card {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.galeria-row {
+    display: flex;
+    justify-items: center;
+    flex: 1;
+    margin-bottom: 32px;
+
+}
+
+.card {
+    flex: 1;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.image-area {
+    flex: 3;
+}
+
+.descricao-area {
+    flex: 1;
+}
+
+.image-area img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    flex-direction: column;
+}
+
+.header1 {
+    width: calc(100vw - 17px);
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.header1 a {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.header-left, .header-right {
+    flex: 1;
+    display: flex;
+}
+.header-left {
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav {
+    height: 60px;
+    display: flex;
+    flex: 1;
+}
+.nav ul {
+    flex: 1;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.footer-area3 {
+    flex: 1;
+    display: flex;
+    height: 200px;
+    padding-left: 14px;
+    flex-direction: column;
+    background-color: #000;
+}
+.email,
+.endereco,
+.telefone {
+    margin-top: 14px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+
+.rede-social {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-top: 14px;
+    font-size: 18px;
+}
+
+.rede-social a i {
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+}
